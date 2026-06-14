@@ -214,7 +214,7 @@ const Index = () => {
             {[
               { icon: 'MapPin', title: 'Адрес', lines: ['г. Улан-Удэ', 'ул. Жердева, 104Б, 3 этаж', 'ТРЦ People\'s Park'] },
               { icon: 'Phone', title: 'Телефон', lines: ['+7 (3012) 42-09-02', 'Бронь и вопросы'] },
-              { icon: 'Clock', title: 'Время работы', lines: ['Пн–Пт: 12:00 – 02:00', 'Сб: 10:00 – 03:00', 'Вс: 10:00 – 02:00'] },
+              { icon: 'Clock', title: 'Время работы', lines: ['Пн–Чт: 12:00 – 02:00', 'Пт–Вс: 10:00 – 03:00'] },
             ].map((c) => (
               <div key={c.title} className="rounded-2xl border border-border bg-card p-7 text-center">
                 <span className="w-14 h-14 rounded-xl bg-primary/15 flex items-center justify-center mx-auto mb-5">
