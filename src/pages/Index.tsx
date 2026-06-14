@@ -20,9 +20,9 @@ const navLinks = [
 ];
 
 const tariffs = [
-  { name: 'Утро', time: 'Пн–Пт · 10:00–16:00', price: '600', unit: '₽ / час', icon: 'Sunrise', popular: false },
-  { name: 'Вечер', time: 'Пн–Пт · 16:00–23:00', price: '1200', unit: '₽ / час', icon: 'Sunset', popular: true },
-  { name: 'Выходные', time: 'Сб–Вс · весь день', price: '1500', unit: '₽ / час', icon: 'PartyPopper', popular: false },
+  { name: 'Утро', time: 'Пн–Чт · 12:00–18:00', price: '1000', unit: '₽ / час', icon: 'Sunrise', popular: false },
+  { name: 'Вечер', time: 'Пн–Чт · 18:00–02:00', price: '1200', unit: '₽ / час', icon: 'Sunset', popular: true },
+  { name: 'Выходные', time: 'Пт–Вс · 10:00–03:00', price: '1500', unit: '₽ / час', icon: 'PartyPopper', popular: false },
 ];
 
 const gallery = [
