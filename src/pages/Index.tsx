@@ -48,7 +48,7 @@ const menu = [
   { cat: 'Напитки', icon: 'GlassWater', items: [
     { name: 'Лимонад домашний', price: '250' },
     { name: 'Крафтовое пиво 0.5', price: '350' },
-    { name: 'Коктейль «Страйк»', price: '490' },
+    { name: 'Коктейль «Турбина»', price: '490' },
     { name: 'Кофе / Чай', price: '180' },
   ]},
 ];
@@ -63,7 +63,7 @@ const Index = () => {
         <div className="container flex items-center justify-between h-16">
           <a href="#home" className="flex items-center gap-2 font-display font-bold text-2xl tracking-wider">
             <Icon name="Disc3" className="text-primary animate-glow rounded-full" size={28} />
-            <span className="text-gradient">STRIKE</span>
+            <span className="text-gradient">ТУРБИНА</span>
           </a>
           <nav className="hidden lg:flex items-center gap-7">
             {navLinks.map((l) => (
@@ -102,7 +102,7 @@ const Index = () => {
               <Icon name="Sparkles" size={16} /> Новый формат отдыха в городе
             </span>
             <h1 className="font-display font-bold uppercase leading-[0.95] text-6xl md:text-8xl mb-6 animate-fade-in" style={{ animationDelay: '0.1s', opacity: 0 }}>
-              Сделай свой <span className="text-gradient">STRIKE</span>
+Запусти свою <span className="text-gradient">ТУРБИНУ</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-10 animate-fade-in" style={{ animationDelay: '0.2s', opacity: 0 }}>
               Современные дорожки, неоновая атмосфера, бар с авторскими коктейлями. Идеальное место для друзей, свиданий и вечеринок.
@@ -288,9 +288,9 @@ const Index = () => {
         <div className="container flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
           <div className="flex items-center gap-2 font-display font-bold text-lg">
             <Icon name="Disc3" className="text-primary" size={22} />
-            <span className="text-gradient">STRIKE</span>
+            <span className="text-gradient">ТУРБИНА</span>
           </div>
-          <p>© 2026 STRIKE Боулинг клуб. Все права защищены.</p>
+          <p>© 2026 ТУРБИНА Боулинг клуб. Все права защищены.</p>
         </div>
       </footer>
     </div>
