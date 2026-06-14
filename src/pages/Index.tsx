@@ -273,6 +273,19 @@ const Index = () => {
               </div>
             ))}
           </div>
+          {/* Map */}
+          <div className="mt-10 rounded-2xl overflow-hidden border border-border" style={{ height: 400 }}>
+            <iframe
+              title="Боулинг Турбина на карте"
+              src="https://yandex.ru/map-widget/v1/?ll=107.608038%2C51.838725&z=17&pt=107.608038%2C51.838725%2Cpm2rdm&text=%D0%A3%D0%BB%D0%B0%D0%BD-%D0%A3%D0%B4%D1%8D%2C+%D1%83%D0%BB.+%D0%96%D0%B5%D1%80%D0%B4%D0%B5%D0%B2%D0%B0+104%D0%91"
+              width="100%"
+              height="400"
+              frameBorder="0"
+              allowFullScreen
+              style={{ border: 0 }}
+            />
+          </div>
+
           <div className="flex justify-center gap-4 mt-10">
             {['Send', 'Instagram', 'Phone'].map((ic) => (
               <a key={ic} href="#" className="w-12 h-12 rounded-full border border-border bg-card flex items-center justify-center hover:bg-primary hover:border-primary transition-colors">
