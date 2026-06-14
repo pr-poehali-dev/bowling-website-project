@@ -15,7 +15,6 @@ const navLinks = [
   { label: 'Главная', href: '#home' },
   { label: 'Бронирование', href: '#booking' },
   { label: 'Галерея', href: '#gallery' },
-  { label: 'Меню', href: '#menu' },
   { label: 'О клубе', href: '#about' },
   { label: 'Контакты', href: '#contacts' },
 ];
@@ -32,26 +31,7 @@ const gallery = [
   { src: IMG_BAR, title: 'Бар и лаунж', span: '' },
 ];
 
-const menu = [
-  { cat: 'Закуски', icon: 'Drumstick', items: [
-    { name: 'Куриные крылья BBQ', price: '490' },
-    { name: 'Картофель фри с соусом', price: '290' },
-    { name: 'Сырные палочки', price: '390' },
-    { name: 'Начос с гуакамоле', price: '450' },
-  ]},
-  { cat: 'Бургеры & Пицца', icon: 'Pizza', items: [
-    { name: 'Чизбургер STRIKE', price: '590' },
-    { name: 'Двойной бекон-бургер', price: '690' },
-    { name: 'Пицца Пепперони', price: '650' },
-    { name: 'Пицца 4 сыра', price: '690' },
-  ]},
-  { cat: 'Напитки', icon: 'GlassWater', items: [
-    { name: 'Лимонад домашний', price: '250' },
-    { name: 'Крафтовое пиво 0.5', price: '350' },
-    { name: 'Коктейль «Турбина»', price: '490' },
-    { name: 'Кофе / Чай', price: '180' },
-  ]},
-];
+
 
 const Index = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -111,9 +91,7 @@ const Index = () => {
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-base h-13 px-8 animate-glow">
                 <a href="#booking"><Icon name="CalendarCheck" size={20} className="mr-2" /> Забронировать дорожку</a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-border bg-card/40 hover:bg-card text-foreground font-semibold text-base h-13 px-8">
-                <a href="#menu"><Icon name="UtensilsCrossed" size={20} className="mr-2" /> Смотреть меню</a>
-              </Button>
+
             </div>
             <div className="flex flex-wrap gap-8 mt-14 animate-fade-in" style={{ animationDelay: '0.4s', opacity: 0 }}>
               {[['12', 'дорожек'], ['24/7', 'работаем'], ['5★', 'рейтинг гостей']].map(([n, t]) => (
@@ -192,33 +170,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* MENU */}
-      <section id="menu" className="py-24">
-        <div className="container">
-          <SectionHead eyebrow="Меню" title="Вкусно между бросками" subtitle="Сытные закуски, сочные бургеры и освежающие напитки — прямо к вашей дорожке." />
-          <div className="grid md:grid-cols-3 gap-6">
-            {menu.map((m) => (
-              <div key={m.cat} className="rounded-2xl border border-border bg-card p-7">
-                <div className="flex items-center gap-3 mb-6">
-                  <span className="w-11 h-11 rounded-xl bg-primary/15 flex items-center justify-center">
-                    <Icon name={m.icon} size={22} className="text-primary" />
-                  </span>
-                  <h3 className="font-display text-xl font-bold uppercase">{m.cat}</h3>
-                </div>
-                <ul className="space-y-4">
-                  {m.items.map((i) => (
-                    <li key={i.name} className="flex items-baseline justify-between gap-3">
-                      <span className="text-foreground/90">{i.name}</span>
-                      <span className="flex-1 border-b border-dashed border-border mx-1 translate-y-[-3px]" />
-                      <span className="font-semibold text-accent whitespace-nowrap">{i.price} ₽</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* ABOUT */}
       <section id="about" className="py-24 bg-card/30">
