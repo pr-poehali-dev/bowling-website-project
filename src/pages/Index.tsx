@@ -22,7 +22,7 @@ const navLinks = [
 const tariffs = [
   { name: 'Утро', time: 'Пн–Чт · 12:00–18:00', price: '1000', unit: '₽ / час', icon: 'Sunrise', popular: false },
   { name: 'Вечер', time: 'Пн–Чт · 18:00–02:00', price: '1200', unit: '₽ / час', icon: 'Sunset', popular: true },
-  { name: 'Выходные', time: 'Пт–Вс · 10:00–03:00', price: '1500', unit: '₽ / час', icon: 'PartyPopper', popular: false },
+  { name: 'Выходные', time: 'Пт–Вс · 10:00–03:00', price: '1300', unit: '₽ / час', icon: 'PartyPopper', popular: false },
 ];
 
 const gallery = [
@@ -122,6 +122,18 @@ const Index = () => {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Promo */}
+          <div className="relative overflow-hidden rounded-2xl border border-secondary/50 bg-gradient-to-r from-secondary/20 via-primary/10 to-accent/10 p-7 mb-10 flex flex-col sm:flex-row items-center gap-6">
+            <span className="text-5xl animate-float">🎂</span>
+            <div className="flex-1 text-center sm:text-left">
+              <h3 className="font-display text-2xl font-bold uppercase mb-1">День рождения — <span className="text-secondary">скидка 10%</span></h3>
+              <p className="text-muted-foreground">Отмечай день рождения с нами! Предъяви документ при бронировании и получи скидку 10% на игру для всей компании.</p>
+            </div>
+            <Button asChild className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold shrink-0">
+              <a href="#booking">Забронировать</a>
+            </Button>
           </div>
 
           {/* Booking form */}
